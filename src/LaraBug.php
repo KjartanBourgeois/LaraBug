@@ -313,7 +313,7 @@ class LaraBug
      */
     private function createExceptionString(array $data)
     {
-        return 'larabug.' . Str::slug($data['host'] . '_' . $data['method'] . '_' . $data['exception'] . '_' . $data['line'] . '_' . $data['file'] . '_' . $data['class']);
+        return 'larabug.' . md5(Str::slug($data['host'] . '_' . $data['method'] . '_' . $data['exception'] . '_' . $data['line'] . '_' . $data['file'] . '_' . $data['class']));
     }
 
     /**
