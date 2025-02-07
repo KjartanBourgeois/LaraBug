@@ -168,10 +168,10 @@ class LaraBugTest extends TestCase
 
 
         $this->assertContains('***', $this->laraBug->filterVariables($data));
-//        $this->assertArrayHasKey('not_password', $this->laraBug->filterVariables($data));
-//        $this->assertArrayNotHasKey('password', $this->laraBug->filterVariables($data)['not_password2']);
-//        $this->assertArrayNotHasKey('password', $this->laraBug->filterVariables($data)['not_password_3']['nah']);
-//        $this->assertArrayNotHasKey('Password', $this->laraBug->filterVariables($data));
+        //        $this->assertArrayHasKey('not_password', $this->laraBug->filterVariables($data));
+        //        $this->assertArrayNotHasKey('password', $this->laraBug->filterVariables($data)['not_password2']);
+        //        $this->assertArrayNotHasKey('password', $this->laraBug->filterVariables($data)['not_password_3']['nah']);
+        //        $this->assertArrayNotHasKey('Password', $this->laraBug->filterVariables($data));
     }
 
     /** @test */
